@@ -24,7 +24,6 @@ models/
 checkpoints/
 *.safetensors
 *.gguf
-*.bin
 
 # Temporary files
 *.log
@@ -34,8 +33,7 @@ checkpoints/
 *.db.step*.bak
 *.before_step*.db
 
-# Local vector database
-data/chroma_db/
+# Curriculum vector index is included for reproducible Advisor retrieval.
 
 # E2B temporary files
 .e2b/
