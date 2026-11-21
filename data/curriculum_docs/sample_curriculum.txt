@@ -1,0 +1,32 @@
+
+SAMPLE CURRICULUM — FOR PIPELINE TESTING ONLY
+
+Module 1: Python Fundamentals
+Python is a programming language used in AI and automation.
+Topics include variables, data types, loops, functions,
+lists, dictionaries, and exception handling.
+
+Module 2: Object-Oriented Programming
+Object-oriented programming organizes code into classes
+and objects. Important concepts include inheritance,
+encapsulation, polymorphism, and abstraction.
+
+Module 3: LangChain Fundamentals
+LangChain provides tools for building applications
+using large language models. Topics include prompts,
+tools, output parsers, and retrieval.
+
+Module 4: Retrieval-Augmented Generation
+RAG combines information retrieval with language models.
+Documents are divided into chunks, converted into
+embeddings, and stored in a vector database.
+
+Module 5: LangGraph
+LangGraph supports stateful agent workflows.
+Its StateGraph allows conditional routing between nodes.
+Checkpointing can preserve conversation state.
+
+Module 6: AI Agent Evaluation
+Agent evaluation measures response quality, reliability,
+and correctness. Structured output validation and
+human review can reduce unsupported decisions.

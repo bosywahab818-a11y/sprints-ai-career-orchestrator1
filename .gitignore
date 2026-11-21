@@ -1,0 +1,45 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model caches
+.cache/
+models/
+checkpoints/
+*.safetensors
+*.gguf
+*.bin
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.py.step*.bak
+*.db.step*.bak
+*.before_step*.db
+
+# Local vector database
+data/chroma_db/
+
+# E2B temporary files
+.e2b/
+
+# Operating system
+.DS_Store
+Thumbs.db

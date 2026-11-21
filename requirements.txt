@@ -1,0 +1,8 @@
+langgraph==1.2.19
+langchain==1.4.8
+langchain-chroma==1.1.0
+chromadb==1.5.9
+sentence-transformers==5.7.0
+e2b==2.64.0
+pydantic==2.14.2
+pandas==2.2.3

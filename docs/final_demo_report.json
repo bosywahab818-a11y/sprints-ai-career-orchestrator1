@@ -1,0 +1,64 @@
+{
+  "project": "Sprints AI Career Orchestrator",
+  "generated_at": "2026-11-21T17:57:25.280549+00:00",
+  "learner": {
+    "learner_id": "SPR-1001",
+    "name": "Ahmed Youssef",
+    "bootcamp_track": "Advanced Agentic AI"
+  },
+  "curriculum_advisor": {
+    "question": "What is LangGraph used for?",
+    "answer": "LangGraph supports stateful agent workflows by allowing conditional routing between nodes through its StateGraph feature. It also enables checkpointing to preserve conversation state.",
+    "unsupported_question_rejected": true
+  },
+  "python_assessor": {
+    "assignment_id": "PY-001",
+    "grade": {
+      "learner_id": "SPR-1001",
+      "assignment_id": "PY-001",
+      "score": 100,
+      "status": "passed",
+      "feedback": "Passed 4 out of 4 tests. Final score: 100/100.",
+      "tests_passed": 4,
+      "tests_total": 4
+    },
+    "feedback": "Great work! You passed 4 out of 4 tests and scored 100/100. Your solution meets the tested requirements.",
+    "database_result_id": 3
+  },
+  "career_matching": {
+    "job_id": "JOB-001",
+    "employer": "Fawry",
+    "job_title": "Junior AI Engineer",
+    "match_score": 100,
+    "approval_status": "approved",
+    "source_type": "synthetic",
+    "real_placement": false
+  },
+  "integration_verification": {
+    "verified_at": "2026-11-21T19:06:54.308810+00:00",
+    "unified_assessor": {
+      "status": "passed",
+      "database_result_id": 4,
+      "learner_id": "SPR-1001",
+      "assignment_id": "PY-001",
+      "score": 100,
+      "tests_passed": 4,
+      "tests_total": 4,
+      "database_persistence_verified": true
+    },
+    "career_human_approval": {
+      "interrupt_verified": true,
+      "valid_approval": "passed",
+      "explicit_rejection": "passed",
+      "incorrect_job_id_rejected": true,
+      "missing_reviewer_id_rejected": true,
+      "synthetic_job_id": "JOB-001"
+    },
+    "automated_tests": {
+      "framework": "pytest",
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    }
+  }
+}
