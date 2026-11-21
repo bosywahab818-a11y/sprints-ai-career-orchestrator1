@@ -66,10 +66,9 @@ Synthetic job openings are not verified live vacancies.
 5. Run the setup and demonstration cells in order.
 
 The project includes a local SQLite demonstration database.
-The Advisor also requires its sample curriculum index to be
-initialized or made available.
+The Advisor loads a prebuilt ChromaDB index from `data/chroma_db/`. This index is present in the verified release ZIP but is not yet tracked in this GitHub repository. Before running the Advisor from a fresh clone, copy `data/chroma_db/` from the ZIP into the project. The project's existing `.gitignore` excludes this directory, so its ignore rules must be adjusted to commit it.
 
-A complete clean-runtime execution remains to be verified.
+A fresh Google Colab runtime successfully installed the project dependencies, ran the 12 automated tests, retrieved curriculum evidence, and executed all eight code cells in the demonstration notebook.
 
 ## Testing
 
@@ -80,6 +79,16 @@ python -m pytest tests/test_core.py -v
 ```
 
 Verified automated results: **12 passed**.
+
+Fresh-environment verification (Google Colab):
+- Automated tests: **12/12 passed** (28.83 seconds).
+- Curriculum retrieval: **1 sample curriculum document retrieved**.
+- Complete demonstration notebook: **8/8 code cells executed**.
+- Advisor: evidence-supported LangGraph question answered; unsupported official refund-policy question rejected.
+- Assessor: valid `square_number` submission executed in E2B, **4/4 tests passed, 100/100**, and assessment saved to SQLite.
+- Career: eligible synthetic job matched and human approval resumed successfully.
+
+These are prototype demonstration results, not production benchmarks or proof of live job availability.
 
 These tests cover:
 - SQLite database integrity
@@ -107,9 +116,7 @@ session isolation are not claimed as covered by the current
 This notebook contains 18 cells, including 8 Python code cells.
 
 The original development notebook is retained separately.
-The clean demonstration notebook has passed structural and
-syntax validation, but has not yet passed a fresh-runtime
-execution test.
+The clean demonstration notebook has passed structural and syntax validation and was executed successfully end-to-end in a fresh Google Colab runtime. Its corrected Assessor example passed all four grading tests and scored 100/100.
 
 ## Current Limitations
 
@@ -118,7 +125,7 @@ execution test.
 - Career openings are synthetic demonstration records.
 - The curriculum is sample content.
 - The system requires further production security hardening.
-- A clean-runtime reproducibility test is still required.
+- The current GitHub repository does not yet include the `data/chroma_db/` index required by the Advisor's retrieval loader. The verified release ZIP contains this index; add it to the repository to make a fresh clone directly runnable.
 
 ## Final Demonstration
 
